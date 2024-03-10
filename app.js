@@ -18,7 +18,7 @@ app.use(express.static('css'));
 app.use(
 	cors({
 		method: 'POST PATCH GET DELETE',
-		origin: 'https://projects-theta-lime.vercel.app/',
+		origin: 'https://projects-theta-lime.vercel.app',
 	})
 );
 
