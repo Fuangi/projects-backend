@@ -15,7 +15,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(express.static('css'));
 
-app.use(cors({ method: 'POST PATCH GET DELETE', origin: 'http://localhost:3000' }));
+app.use(
+	cors({
+		method: 'POST PATCH GET DELETE',
+		origin: 'https://projects-backend-dg1d.onrender.com',
+	})
+);
 
 // body parser - reading data from body into req.body
 app.use(express.json());
