@@ -4,6 +4,7 @@ const eoyProjectSchema = new mongoose.Schema({
 	name: {
 		type: String,
 		required: [true, 'A project must have a user(owner) please!'],
+		unique: true,
 	},
 	level: {
 		type: Number,
