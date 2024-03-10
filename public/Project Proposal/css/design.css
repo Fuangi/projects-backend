@@ -1,0 +1,30 @@
+.landing-page {
+  min-height: 100vh;
+  padding-bottom: 1em;
+  background: linear-gradient(
+      #1015227f,
+      #1419296e,
+      rgba(19, 24, 38, 0.53),
+      #0e121e
+    ),
+    url("../img/bg2-min.jpg") no-repeat center/cover;
+  background-attachment: fixed;
+}
+.heading {
+  font-size: 2.5em;
+  font-weight: 500;
+}
+.sub-heading {
+  display: flex;
+  font-weight: 500;
+  font-size: 2em;
+  color: var(--primary-two);
+
+  justify-content: flex-start;
+  align-items: center;
+  span {
+    color: var(--primary-two);
+    font-weight: 300;
+    font-size: 1.25em;
+  }
+}

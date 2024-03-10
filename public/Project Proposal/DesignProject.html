@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Proposal Platform 2024</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/design.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="landing-page">
+        <header class="header">
+          <div class="container">
+            <div class="links-container">
+              <a href="index.html" class="logo">Proposal Hub</a>
+              <a href="DesignProject.html" class="logo active"
+                >Design Project</a
+              >
+            </div>
+          </div>
+        </header>
+
+        <div class="landing-content">
+          <div class="landing-text">
+            <h1 class="heading">
+              Landmark school of Science, Engineering and Technology
+            </h1>
+            <h1 class="sub-heading">
+              <span><</span> Design Project <span> ></span>
+            </h1>
+
+            <!-- <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum tempore neque ut ipsum quam a.</p> -->
+          </div>
+
+          <form id="form">
+            <div class="input-field">
+              <label for="name">Group member names</label>
+              <!-- <p class="alert"></p> -->
+              <textarea class="input" id="textarea" cols="30" rows="6">
+              </textarea>
+            </div>
+
+            <div class="input-field">
+              <label for="topic">Project Topic </label>
+              <input class="input" type="text" name="topic" id="topic" />
+            </div>
+
+            <div class="btns">
+              <button type="submit" class="btn">SUBMIT</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const form = document.getElementById("form");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        var namesGroup = document.getElementById("textarea").value;
+        console.log(namesGroup);
+        var names = namesGroup.split("\n")
+        console.log(names);
+      });
+    </script>
+  </body>
+</html>

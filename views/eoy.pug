@@ -1,0 +1,48 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Project Proposal Platform 2024
+    link(rel='stylesheet' href='css/main.css')
+  body
+    div.wrapper
+      div.landing-page
+        header.header
+          .container
+            .links-container
+              a.logo.active(href='index.html') Proposal Hub
+              a.logo(href='DesignProject.html') Design Project
+        .landing-content
+          .landing-text
+            h1.heading Project Proposal
+            // <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum tempore neque ut ipsum quam a.</p>
+          form#form
+            .input-field
+              label(for='name') Full Names
+              input#name.input(type='text', name='name', placeholder='as on birth certificate')
+            // levels
+            .field
+              label(for='internshipCompany') Level
+              .input-field
+                select(name='Level')
+                  option(value='200') 200
+                  option(value='300') 300
+            .field
+              label(for='internshipCompany') Specialty
+              .input-field
+                select#internshipCompany(name='Internship')
+                  option(value='Software Engineering')
+                    | Software Engineering
+                  option(value='Networking and Cyber Security')
+                    | Information Technology and Security
+                  option(value='Graphics and Web design')
+                    | Computer Graphics and Web design
+            .input-field
+              label(for='topic') Project Topic 
+              input#topic.input(type='text', name='topic', placeholder='Project topic')
+            .input-field
+              label(for='supervisor') Proposed Supervisor 
+              input#supervisor.input(type='text', name='supervisor', placeholder='Project topic')
+            .btns
+              button.btn(type='submit') SUBMIT
